@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-mono: "Space Mono", monospace;
+}
+
+@utility text-outline-white {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+}
+
+:root[data-theme="dark"] {
+  --bg: #080b12;
+  --bg2: #0f1420;
+  --bg3: #161d2e;
+  --surface: #1a2235;
+  --surface2: #1f2a3e;
+  --border: rgba(255, 255, 255, 0.07);
+  --border2: rgba(255, 255, 255, 0.12);
+  --text: #e8edf7;
+  --text2: #8a9bbf;
+  --text3: #5a6a85;
+  --accent: #4f8ef7;
+  --accent2: #7c3aed;
+  --gold: #f0b429;
+  --rose: #f43f5e;
+  --green: #10b981;
+  --orange: #f97316;
+  --glow: rgba(79, 142, 247, 0.15);
+  --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+  --nav-bg: rgba(8, 11, 18, 0.94);
+  --ad-bg: rgba(240, 180, 41, 0.06);
+  --ad-border: rgba(240, 180, 41, 0.25);
+}
+
+:root[data-theme="light"] {
+  --bg: #f4f7fc;
+  --bg2: #eaeff9;
+  --bg3: #dde5f5;
+  --surface: #ffffff;
+  --surface2: #f0f4ff;
+  --border: rgba(0, 0, 0, 0.08);
+  --border2: rgba(0, 0, 0, 0.14);
+  --text: #0d1420;
+  --text2: #445068;
+  --text3: #8896ab;
+  --accent: #2563eb;
+  --accent2: #7c3aed;
+  --gold: #d97706;
+  --rose: #e11d48;
+  --green: #059669;
+  --orange: #ea580c;
+  --glow: rgba(37, 99, 235, 0.08);
+  --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.09);
+  --nav-bg: rgba(244, 247, 252, 0.96);
+  --ad-bg: rgba(217, 119, 6, 0.05);
+  --ad-border: rgba(217, 119, 6, 0.25);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.4s, color 0.4s;
+  font-family: var(--font-sans);
+}
